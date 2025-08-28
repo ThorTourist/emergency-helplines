@@ -27,66 +27,70 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
   </head>
   <body>
-    <nav>
-      <div
-        class="flex items-center justify-between w-full h-20 bg-white border-2 border-blue-700"
-      >
-        <!-- left div  -->
-        <div class="flex items-center gap-3 mt-3 ml-14">
-          <img class="w-12 h-12" src="assets/logo.png" alt="" />
-          <h1 class="font-extrabold text-[#006747] leading-4 ]">
-            Emergency <br />
-            service
-          </h1>
+    <!-- navbar  -->
+    <nav class="items-center justify-between pb-5 bg-white md:flex md:px-10">
+      <!-- left-div  -->
+      <div id="left-div" class="flex items-center justify-center gap-5 pt-5">
+        <img class="h-15 md:h-12" src="assets/logo.png" alt="" />
+
+        <h1 class="font-extrabold text-[#006747] leading-4 ]">
+          Emergency <br />
+          service
+        </h1>
+      </div>
+
+      <!-- right div  -->
+
+      <div class="flex items-center justify-between gap-5 px-2 mt-8">
+        <div
+          class="border-2 border-blue-500 w-[6rem] h-[1.5rem] flex justify-center items-center gap-2 px-4 rounded-[50px] bg-[#41ff6b1a]"
+        >
+          <span class="font-bold inter-normal text-[0.6rem]">100</span>
+          <img class="h-3" src="assets/heart.png" alt="" />
         </div>
-        <!-- right div  -->
-        <div class="flex items-center justify-between gap-5 mr-12">
-          <div
-            class="border-2 border-blue-500 h-12 w-[6.2rem] flex items-center gap-2 px-4 rounded-[50px] bg-[#41ff6b1a]"
+        <div
+          class="border-2 border-blue-500 w-[6rem] h-[1.5rem] flex items-center gap-2 px-4 rounded-[50px] bg-[#41ff6b1a]"
+        >
+          <span class="font-bold inter-normal text-[0.6rem]">100</span>
+          <img class="h-4" src="assets/coin.png" alt="" />
+        </div>
+        <div
+          class="w-[6rem] h-[1.5rem] flex justify-center items-center gap-2 px-4 rounded-[50px] bg-[#00a63e]"
+        >
+          <span class="font-bold text-white inter-normal text-[0.7rem]"
+            >2 <span>Copy</span></span
           >
-            <span class="font-extrabold inter-normal">0</span>
-            <img class="h-8" src="assets/heart.png" alt="" />
-          </div>
-          <div
-            class="border-2 border-blue-500 h-12 w-[100px] flex items-center gap-2 px-4 rounded-[50px] bg-[#41ff6b1a]"
-          >
-            <span class="font-extrabold inter-normal">100</span>
-            <img class="h-8" src="assets/coin.png" alt="" />
-          </div>
-          <div
-            class="h-12 w-[100px] flex justify-center items-center gap-2 px-4 rounded-[50px] bg-[#00a63e]"
-          >
-            <span class="font-extrabold text-white inter-normal"
-              >2 <span>Copy</span></span
-            >
-          </div>
         </div>
       </div>
     </nav>
 
-    <!-- banner -->
+    <!-- hero section  -->
+
     <div
-      class="bg-gradient-to-r from-[#013122] via-[#006747] to-[#013223] h-40 w-full flex flex-col justify-center items-center"
+      class="bg-gradient-to-r from-[#013122] via-[#006747] to-[#013223] pt-2 pb-2"
     >
-      <img class="h-[92px] w-[92px]" src="assets/logo-dark.png" alt="" />
-      <h1 class="font-bold text-white font-inter">
+      <img class="h-12 mx-auto md:h-12" src="assets/logo.png" alt="" />
+      <h1
+        class="text-sm font-bold text-center text-white md:text-xl font-inter"
+      >
         Emergency Service Directory
       </h1>
-      <p class="text-center text-white">
+      <p class="text-[0.6rem] md:text-sm text-center text-white">
         Government Emergency Services at Your Fingertip – A Project by
         Government of the People’s Republic of Bangladesh
       </p>
     </div>
 
-    <!-- main section  -->
-    <section>
-      <div
-        class="h-[900px] border-4 border-red-500 mx-auto mt-8 ml-8 mr-8 grid grid-cols-4 grid-rows-3 gap-4 p-4"
-      >
+    <!-- card-container  -->
+
+    <section class="flex flex-col gap-3 mx-4 my-3 md:grid md:grid-cols-12">
+      <div class="md:col-span-9 md:grid md:grid-cols-3 md:gap-5">
         <!-- div-National Emergency -->
-        <div class="w-full h-full p-5 border-2 border-blue-700">
+        <div class="w-full h-full p-5 my-4 border-2 border-blue-700 rounded-xl">
           <div class="flex items-center justify-between mb-4">
             <div class="bg-[#ffe3e2] rounded-lg p-2">
               <img class="w-8 h-8" src="assets/emergency.png" alt="" />
@@ -108,7 +112,7 @@
         </div>
 
         <!-- Police-Helpline -->
-        <div class="w-full h-full p-5 border-2 border-blue-700">
+        <div class="w-full h-full p-5 my-4 border-2 border-blue-700 rounded-xl">
           <div class="flex items-center justify-between mb-4">
             <div class="bg-[#ffe3e2] rounded-lg p-2">
               <img class="w-8 h-8" src="assets/police.png" alt="" />
@@ -129,7 +133,7 @@
           </button>
         </div>
         <!-- Fire-Service -->
-        <div class="w-full h-full p-5 border-2 border-blue-700">
+        <div class="w-full h-full p-5 my-3 border-2 border-blue-700 rounded-xl">
           <div class="flex items-center justify-between mb-4">
             <div class="bg-[#ffe3e2] rounded-lg p-2">
               <img class="w-8 h-8" src="assets/fire-service.png" alt="" />
@@ -149,10 +153,9 @@
             <i class="text-white fa-solid fa-phone"></i> Call
           </button>
         </div>
-        <!-- History-Call-logs -->
-        <div class="w-full h-full row-span-3 border-2 border-blue-700"></div>
+
         <!-- Ambulance -->
-        <div class="w-full h-full p-5 border-2 border-blue-700">
+        <div class="w-full h-full p-5 my-3 border-2 border-blue-700 rounded-xl">
           <div class="flex items-center justify-between mb-4">
             <div class="bg-[#ffe3e2] rounded-lg p-2">
               <img class="w-8 h-8" src="assets/ambulance.png" alt="" />
@@ -173,7 +176,7 @@
           </button>
         </div>
         <!-- Women and Child -->
-        <div class="w-full h-full p-5 border-2 border-blue-700">
+        <div class="w-full h-full p-5 my-3 border-2 border-blue-700 rounded-xl">
           <div class="flex items-center justify-between mb-4">
             <div class="bg-[#ffe3e2] rounded-lg p-2">
               <img class="w-8 h-8" src="assets/emergency.png" alt="" />
@@ -194,7 +197,7 @@
           </button>
         </div>
         <!-- Anti-Coruption -->
-        <div class="w-full h-full p-5 border-2 border-blue-700">
+        <div class="w-full h-full p-5 my-3 border-2 border-blue-700 rounded-xl">
           <div class="flex items-center justify-between mb-4">
             <div class="bg-[#ffe3e2] rounded-lg p-2">
               <img class="w-8 h-8" src="assets/emergency.png" alt="" />
@@ -215,7 +218,7 @@
           </button>
         </div>
         <!-- Electricity -->
-        <div class="w-full h-full p-5 border-2 border-blue-700">
+        <div class="w-full h-full p-5 my-3 border-2 border-blue-700 rounded-xl">
           <div class="flex items-center justify-between mb-4">
             <div class="bg-[#ffe3e2] rounded-lg p-2">
               <img class="w-8 h-8" src="assets/emergency.png" alt="" />
@@ -236,7 +239,7 @@
           </button>
         </div>
         <!-- Brack Helpline -->
-        <div class="w-full h-full p-5 border-2 border-blue-700">
+        <div class="w-full h-full p-5 my-3 border-2 border-blue-700 rounded-xl">
           <div class="flex items-center justify-between mb-4">
             <div class="bg-[#ffe3e2] rounded-lg p-2">
               <img class="w-8 h-8" src="assets/emergency.png" alt="" />
@@ -257,7 +260,7 @@
           </button>
         </div>
         <!-- Railway-Helpline -->
-        <div class="w-full h-full p-5 border-2 border-blue-700">
+        <div class="w-full h-full p-5 my-3 border-2 border-blue-700 rounded-xl">
           <div class="flex items-center justify-between mb-4">
             <div class="bg-[#ffe3e2] rounded-lg p-2">
               <img class="w-8 h-8" src="assets/emergency.png" alt="" />
@@ -278,6 +281,32 @@
           </button>
         </div>
       </div>
+
+      <div class="my-4 md:col-span-3">
+        <aside
+          class="p-4 bg-white border-2 border-red-950 rounded-2xl md:row-span-2"
+        >
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="text-lg font-semibold">Call History</h2>
+            <button class="text-sm text-red-500">Clear</button>
+          </div>
+          <ul class="space-y-3 text-sm">
+            <li class="flex justify-between">
+              <span>Fire Service</span><span>11:36 AM</span>
+            </li>
+            <li class="flex justify-between">
+              <span>National Emergency</span><span>11:35 AM</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Railway Helpline</span><span>11:34 AM</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Anti-Corruption</span><span>11:32 AM</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
     </section>
   </body>
+  <script src="styles/home.js"></script>
 </html>
