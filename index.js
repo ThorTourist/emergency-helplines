@@ -28,8 +28,8 @@ for (let callButton of callBtns) {
 
     // Alert showing
     alert(`Calling ${helplineTitle} - ${helplineNumber}`);
-    // copy to clipboard
 
+    // copy to clipboard
     navigator.clipboard.writeText(helplineNumber).then(() => {
       alert(`Number copied: ${helplineNumber}`);
     });
