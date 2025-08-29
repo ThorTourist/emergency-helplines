@@ -25,7 +25,14 @@ for (let callButton of callBtns) {
     let newTotalCoin = Number(totalCoin) - 20;
 
     getElement("coin").innerText = newTotalCoin;
+
+    // Alert showing
     alert(`Calling ${helplineTitle} - ${helplineNumber}`);
+    // copy to clipboard
+
+    navigator.clipboard.writeText(helplineNumber).then(() => {
+      alert(`Number copied: ${helplineNumber}`);
+    });
 
     const newCart = document.createElement("div");
     newCart.innerHTML = `
@@ -41,12 +48,6 @@ for (let callButton of callBtns) {
     `;
 
     callHistoryContainer.append(newCart);
-
-    // const quantity = getElement("total-quantity").innerText;
-    // console.log(quantity);
-
-    // const currentQuantity = Number(quantity) + 1;
-    // getElement("total-quantity").innerText = currentQuantity;
   });
 }
 
